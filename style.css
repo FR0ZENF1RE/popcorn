@@ -3,6 +3,12 @@ Header background - #FFDBAA
 button - #805215
 Header Text - #553100
 Main background - #D4A76A*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #D4A76A;
 }
@@ -11,31 +17,31 @@ h1 {
   color: #553100;
 }
 
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffdbaa;
-  padding: 10px;
-  border: 5px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.navlink {
+.header {
+  background: #ffdbaa;
   margin: 0;
-  padding: 10px;
+  padding: 0;
+}
+
+.nav-list {
   display: flex;
   flex-direction: row;
-  background-color: #805215;
-  margin-left: 10px;
-  text-decoration: none;
-  color: white;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  border: 5px;
+  gap: 1rem;
+  list-style: none;
 }
+
+.nav-list li {
+  background: #805215;
+  color: #fff;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+
 
 .flex-container {
   width: 100%;
@@ -43,6 +49,14 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.flex-container a {
+  background: #805215;
+  color: #fff;
+  padding: 5px;
+  margin: 10px;
+
 }
 
 .flex-box {
